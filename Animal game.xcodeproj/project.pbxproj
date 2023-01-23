@@ -13,17 +13,21 @@
 		F712A84A296D92A700C907BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F712A848296D92A700C907BC /* Main.storyboard */; };
 		F712A84C296D92A800C907BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F712A84B296D92A800C907BC /* Assets.xcassets */; };
 		F712A84F296D92A800C907BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F712A84D296D92A800C907BC /* LaunchScreen.storyboard */; };
+		F72BEE0229733B24006E8223 /* SecondScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72BEE0129733B24006E8223 /* SecondScreen.swift */; };
+		F72BEE0429733B5E006E8223 /* ResultProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72BEE0329733B5E006E8223 /* ResultProgram.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F712A83F296D92A700C907BC /* Animal game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Animal game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F712A842296D92A700C907BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F712A844296D92A700C907BC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F712A846296D92A700C907BC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F712A846296D92A700C907BC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; wrapsLines = 1; };
 		F712A849296D92A700C907BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F712A84B296D92A800C907BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F712A84E296D92A800C907BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F712A850296D92A800C907BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F72BEE0129733B24006E8223 /* SecondScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreen.swift; sourceTree = "<group>"; };
+		F72BEE0329733B5E006E8223 /* ResultProgram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultProgram.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +44,7 @@
 		F712A836296D92A600C907BC = {
 			isa = PBXGroup;
 			children = (
-				F712A841296D92A700C907BC /* Animal game */,
+				F78A1172296EFB5400412A1A /* Animal Game */,
 				F712A840296D92A700C907BC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,18 +57,52 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F712A841296D92A700C907BC /* Animal game */ = {
+		F712A841296D92A700C907BC /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				F712A842296D92A700C907BC /* AppDelegate.swift */,
-				F712A844296D92A700C907BC /* SceneDelegate.swift */,
-				F712A846296D92A700C907BC /* ViewController.swift */,
 				F712A848296D92A700C907BC /* Main.storyboard */,
-				F712A84B296D92A800C907BC /* Assets.xcassets */,
 				F712A84D296D92A800C907BC /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		F78A1166296EFA4100412A1A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F712A84B296D92A800C907BC /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F78A116C296EFAA700412A1A /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F712A846296D92A700C907BC /* ViewController.swift */,
+				F72BEE0129733B24006E8223 /* SecondScreen.swift */,
+				F72BEE0329733B5E006E8223 /* ResultProgram.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		F78A1171296EFB0D00412A1A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F712A844296D92A700C907BC /* SceneDelegate.swift */,
+				F712A842296D92A700C907BC /* AppDelegate.swift */,
 				F712A850296D92A800C907BC /* Info.plist */,
 			);
-			path = "Animal game";
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F78A1172296EFB5400412A1A /* Animal Game */ = {
+			isa = PBXGroup;
+			children = (
+				F78A1166296EFA4100412A1A /* Resources */,
+				F78A116C296EFAA700412A1A /* View Controllers */,
+				F78A1171296EFB0D00412A1A /* Supporting Files */,
+				F712A841296D92A700C907BC /* Storyboards */,
+			);
+			path = "Animal Game";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +177,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F712A847296D92A700C907BC /* ViewController.swift in Sources */,
+				F72BEE0229733B24006E8223 /* SecondScreen.swift in Sources */,
 				F712A843296D92A700C907BC /* AppDelegate.swift in Sources */,
+				F72BEE0429733B5E006E8223 /* ResultProgram.swift in Sources */,
 				F712A845296D92A700C907BC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,12 +329,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5XHXPK88Y9;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Animal game/Info.plist";
+				INFOPLIST_FILE = "Animal Game/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -317,12 +358,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5XHXPK88Y9;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Animal game/Info.plist";
+				INFOPLIST_FILE = "Animal Game/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
